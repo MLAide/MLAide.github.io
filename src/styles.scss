@@ -102,10 +102,17 @@ $mlaide-theme: mat-light-theme($mlaide-primary, $mlaide-accent, $mlaide-warn);
     background-color: mat-color($mlaide-primary, 800);
     color: white;
 }
+.bg-primary-50 {
+    background-color: mat-color($mlaide-primary, 50);
+}
 
 .bg-accent-800 {
     background-color: mat-color($mlaide-accent, 800);
     color: white;
+}
+
+.bg-accent-50 {
+    background-color: mat-color($mlaide-accent, 50);
 }
 
 .font-accent-800 {
