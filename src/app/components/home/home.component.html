@@ -90,9 +90,8 @@
     <h1 i18n>Take a few moments to look at our key features:</h1>
 </div>
 <div *ngFor="let keyFeature of keyFeatures; let last=last; let odd=odd; let even=even;">
-    <div *ngIf="odd" fxLayout="row" fxLayout.xs="column"
-        style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;" fxLayoutAlign="center"
-        ngClass.xs="container-xs">
+    <div *ngIf="odd" fxLayout="row" style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;"
+        fxLayoutAlign="center center" ngClass.xs="container-xs">
         <div fxLayout="column" fxFlex.gt-xs="20">
             <h2 i18n>{{keyFeature.title}}</h2>
 
@@ -104,9 +103,8 @@
             <img class="img-logo" [src]="keyFeature.imgUrl">
         </div>
     </div>
-    <div *ngIf="even" fxLayout="row" fxLayout.xs="column"
-        style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;" fxLayoutAlign="center"
-        ngClass.xs="container-xs">
+    <div *ngIf="even" fxLayout="row" style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;"
+        fxLayoutAlign="center" ngClass.xs="container-xs">
         <div fxFlex.gt-xs="20">
             <img class="img-logo" [src]="keyFeature.imgUrl">
         </div>
@@ -121,7 +119,7 @@
     </div>
     <div *ngIf="!last" fxLayout="row" style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;"
         fxLayoutAlign="center" ngClass.xs="container-xs">
-        <mat-divider fxFlex="60"></mat-divider>
+        <mat-divider fxFlex.gt-xs="60" fxFlex.xs="100"></mat-divider>
     </div>
 </div>
 
