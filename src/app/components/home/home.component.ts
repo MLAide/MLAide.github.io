@@ -15,6 +15,14 @@ export class HomeComponent implements OnInit {
     { title: "ML Library Integration", content: "Raising amount of integrated machine learning libraries for convenient tracking of parameters, metrics and models.", imgUrl: "../../../assets/Home/ai-2.png" },
     { title: "Access Management", content: "Manage access to your machine learning projects and collaborate with other members of your team.", imgUrl: "../../../assets/Home/ai-2.png" },
   ];
+
+  public roadmap = [
+    { content: "Visualization of Metrics for an easier model evaluation", },
+    { content: "Integration of further ML libraries (Tensorflow, PyTorch, Keras, …) toincrease adoption", },
+    { content: "Extended Data Tracking (Environment, Code, …) to improve reproducibility" },
+    { content: "Package your serving app based on your training to enable CI/CD for machine learning models", },
+    { content: "Auto recording of parameters and metrics to enhance the convenience", },
+  ]
   constructor() { }
 
   ngOnInit(): void {

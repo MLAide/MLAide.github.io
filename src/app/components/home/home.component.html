@@ -21,7 +21,7 @@
         <h2 i18n>Diverse</h2>
 
         <body i18n>
-            <b>Supports every ML Library</b> for complete freedom
+            <strong>Supports every ML Library</strong> for complete freedom
         </body>
         <div fxHide.gt-xs>
             <span>
@@ -34,7 +34,7 @@
         <h2 i18n>Transparent</h2>
 
         <body i18n>
-            <b>Provided Open Source</b> for maximum transparency
+            <strong>Provided Open Source</strong> for maximum transparency
         </body>
         <div fxHide.gt-xs>
             <span>
@@ -47,7 +47,7 @@
         <h2 i18n>Independent</h2>
 
         <body i18n>
-            <b>Runs on every Cloud platform or On-Premises</b> for complete independence
+            <strong>Runs on every Cloud platform or On-Premises</strong> for complete independence
         </body>
         <div fxHide.gt-xs>
             <span>
@@ -60,7 +60,7 @@
         <h2 i18n>Scalable</h2>
 
         <body i18n>
-            <b>Scalable from single user to large enterprises</b> and ready for growing demands
+            <strong>Scalable from single user to large enterprises</strong> and ready for growing demands
         </body>
         <div fxHide.gt-xs>
             <span>
@@ -73,7 +73,7 @@
         <h2 i18n>Effective</h2>
 
         <body i18n>
-            <b>Accelerates MLOps for more focus on</b> what really matters: <b>Your Business</b>
+            <strong>Accelerates MLOps for more focus on</strong> what really matters: <strong>Your Business</strong>
         </body>
         <div fxHide.gt-xs>
             <span>
@@ -87,7 +87,7 @@
 <!-- Key Features Start -->
 <div fxLayout="row" style="padding-top: 10vh; background-color: whitesmoke;" fxLayoutAlign="center"
     ngClass.xs="container-xs">
-    <h1 i18n>Take a few moments to look at our key features:</h1>
+    <h1 i18n>Have a look at our key features:</h1>
 </div>
 <div *ngFor="let keyFeature of keyFeatures; let last=last; let odd=odd; let even=even;">
     <div *ngIf="odd" fxLayout="row" style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;"
@@ -122,6 +122,18 @@
         <mat-divider fxFlex.gt-xs="60" fxFlex.xs="100"></mat-divider>
     </div>
 </div>
-
-
 <!-- Key Features End -->
+<!-- Features Roadmap Start -->
+<div fxLayout="row" style="padding-top: 10vh" fxLayoutAlign="center" ngClass.xs="container-xs">
+    <h1 i18n>And there is much more to come:</h1>
+</div>
+<div fxLayout="row" style="padding-bottom: 10vh" fxLayoutAlign="center" ngClass.xs="container-xs">
+    <div fxLayout="column">
+        <div *ngFor="let entry of roadmap" fxLayoutAlign="start start" style="padding-top: 16px; padding-bottom: 16px;">
+            <mat-icon mat-list-icon>star</mat-icon>
+
+            <body fxFlexOffset="16px" i18n>{{entry.content}}</body>
+        </div>
+    </div>
+</div>
+<!-- Features Roadmap End -->
