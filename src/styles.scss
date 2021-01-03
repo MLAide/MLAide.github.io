@@ -77,7 +77,7 @@ $mat-mlaide-red: (
   )
 );
 
-$mlaide-primary: mat-palette($mat-light-blue, 800, 500, 900);
+$mlaide-primary: mat-palette($mat-mlaide-blue, 800, 500, 900);
 $mlaide-accent: mat-palette($mat-mlaide-red, 800, 500, 900);
 
 // The warn palette is optional (defaults to red).
@@ -94,6 +94,13 @@ $mlaide-theme: mat-light-theme($mlaide-primary, $mlaide-accent, $mlaide-warn);
 
 /* You can add global styles to this file, and also import other style files */
 
+/**
+*
+* Colors
+* 
+*/
+
+// Background
 .bg-primary-900 {
     background-color: mat-color($mlaide-primary, 900);
     color: white;
@@ -115,13 +122,89 @@ $mlaide-theme: mat-light-theme($mlaide-primary, $mlaide-accent, $mlaide-warn);
     background-color: mat-color($mlaide-accent, 50);
 }
 
+// Font
+
 .font-accent-800 {
     color: mat-color($mlaide-accent,800);
 }
 
+/**
+*
+* Containers
+* 
+*/
+
 .container-xs {
     padding-left: 10vw;
     padding-right: 10vw;
+}
+
+/**
+*
+* Icons
+* 
+*/
+
+// Size
+.material-icons.md-18 { 
+font-size: 18px;
+height:18px;
+width:18px;
+}
+
+.material-icons.md-20 { 
+font-size: 20px,
+}
+
+.material-icons.md-24 { 
+font-size: 24px;
+height:auto;
+width:auto;
+}
+.material-icons.md-32 { 
+font-size: 32px;
+height:32px;
+width:32px;
+}
+
+.material-icons.md-36 { 
+font-size: 36px;
+height:36px;
+width:36px;
+}
+.material-icons.md-48 { 
+font-size: 48px; 
+height:48px;
+width:48px;
+}
+.material-icons.md-96 { 
+font-size: 96px; 
+height:96px;
+width:96px;
+}
+
+// Border
+.material-icons.md-bg-circle-96{ 
+    border-radius:50%;
+    height:144px;
+    width:144px;
+}
+.material-icons.md-bg-circle-48{ 
+    border-radius:50%;
+    height:72px;
+    width:72px;
+}
+  
+.material-icons.md-bg-circle-32{ 
+    border-radius:50%;
+    height:48px;
+    width:48px;
+}
+
+.material-icons.md-bg-circle-24{ 
+    border-radius:50%;
+    height:36px;
+    width:36px;
 }
 
 html, body { height: 100%; }
