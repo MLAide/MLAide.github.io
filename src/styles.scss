@@ -1,4 +1,121 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$mat-mlaide-blue: (
+  50: #e2f1fe,
+  100: #badbfc,
+  200: #8dc5fb,
+  300: #5faff8,
+  400: #3b9ef7,
+  500: #6088f4,
+  600: #1a7fe7,
+  700: #1a6dd3,
+  800: #195cc1,
+  900: #003490,
+  A100: #ffcdd1,
+  A200: #f59997,
+  A400: #ff5b49,
+  A700: #dc2826,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$mat-mlaide-red: (
+  50: #ffebee,
+  100: #ffcdd1,
+  200: #f59997,
+  300: #ed716f,
+  400: #f75049,
+  500: #ff5b49,
+  600: #ee332c,
+  700: #dc2826,
+  800: #cf1f1f,
+  900: #960000,
+  A100: #ffcdd1,
+  A200: #f59997,
+  A400: #ff5b49,
+  A700: #dc2826,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$mlaide-primary: mat-palette($mat-light-blue, 800, 500, 900);
+$mlaide-accent: mat-palette($mat-mlaide-red, 800, 500, 900);
+
+// The warn palette is optional (defaults to red).
+$mlaide-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$mlaide-theme: mat-light-theme($mlaide-primary, $mlaide-accent, $mlaide-warn);
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($mlaide-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+.bg-primary-900 {
+    background-color: mat-color($mlaide-primary, 900);
+    color: white;
+}
+.bg-primary-800 {
+    background-color: mat-color($mlaide-primary, 800);
+    color: white;
+}
+
+.bg-accent-800 {
+    background-color: mat-color($mlaide-accent, 800);
+    color: white;
+}
+
+.font-accent-800 {
+    color: mat-color($mlaide-accent,800);
+}
+
+.container-xs {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
