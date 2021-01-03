@@ -20,9 +20,9 @@
     <div fxFlex.gt-xs="15">
         <h2 i18n>Diverse</h2>
 
-        <body i18n>
+        <span i18n>
             <strong>Supports every ML Library</strong> for complete freedom
-        </body>
+        </span>
         <div fxHide.gt-xs>
             <span>
                 <h2></h2>
@@ -33,9 +33,9 @@
     <div fxFlex.gt-xs="15">
         <h2 i18n>Transparent</h2>
 
-        <body i18n>
+        <span i18n>
             <strong>Provided Open Source</strong> for maximum transparency
-        </body>
+        </span>
         <div fxHide.gt-xs>
             <span>
                 <h2></h2>
@@ -46,9 +46,9 @@
     <div fxFlex.gt-xs="15">
         <h2 i18n>Independent</h2>
 
-        <body i18n>
+        <span i18n>
             <strong>Runs on every Cloud platform or On-Premises</strong> for complete independence
-        </body>
+        </span>
         <div fxHide.gt-xs>
             <span>
                 <h2></h2>
@@ -59,9 +59,9 @@
     <div fxFlex.gt-xs="15">
         <h2 i18n>Scalable</h2>
 
-        <body i18n>
+        <span i18n>
             <strong>Scalable from single user to large enterprises</strong> and ready for growing demands
-        </body>
+        </span>
         <div fxHide.gt-xs>
             <span>
                 <h2></h2>
@@ -72,9 +72,9 @@
     <div fxFlex.gt-xs="15">
         <h2 i18n>Effective</h2>
 
-        <body i18n>
+        <span i18n>
             <strong>Accelerates MLOps for more focus on</strong> what really matters: <strong>Your Business</strong>
-        </body>
+        </span>
         <div fxHide.gt-xs>
             <span>
                 <h2></h2>
@@ -95,9 +95,9 @@
         <div fxLayout="column" fxFlex.gt-xs="20">
             <h2 i18n>{{keyFeature.title}}</h2>
 
-            <body i18n>
+            <span i18n>
                 {{keyFeature.content}}
-            </body>
+            </span>
         </div>
         <div fxFlex.gt-xs="20">
             <img class="img-logo" [src]="keyFeature.imgUrl">
@@ -111,9 +111,9 @@
         <div fxLayout="column" fxFlex.gt-xs="20">
             <h2 i18n>{{keyFeature.title}}</h2>
 
-            <body i18n>
+            <span i18n>
                 {{keyFeature.content}}
-            </body>
+            </span>
         </div>
 
     </div>
@@ -132,7 +132,7 @@
         <div *ngFor="let entry of roadmap" fxLayoutAlign="start start" style="padding-top: 16px; padding-bottom: 16px;">
             <mat-icon mat-list-icon>star</mat-icon>
 
-            <body fxFlexOffset="16px" i18n>{{entry.content}}</body>
+            <span fxFlexOffset="16px" i18n>{{entry.content}}</span>
         </div>
     </div>
 </div>
