@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ContactApiService } from 'src/app/services/contact-api.service';
+import { SnackbarService } from 'src/app/utils/snackbar.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +9,7 @@ import { ContactApiService } from 'src/app/services/contact-api.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  public sentMessage = false;
   contactForm = this.fb.group({
     company: null,
     firstName: [null, { validators: [Validators.required], updateOn: "change", },],
@@ -18,9 +20,11 @@ export class ContactComponent {
   });
 
   constructor(private fb: FormBuilder,
-    private contactApiService: ContactApiService) { }
+    private contactApiService: ContactApiService,
+    private snackbarService: SnackbarService) { }
 
   onSubmit() {
     this.contactApiService.send(this.contactForm.value);
+    this.sentMessage = true;
   }
 }

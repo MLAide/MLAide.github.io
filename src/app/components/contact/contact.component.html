@@ -1,9 +1,9 @@
-<div fxLayout="row" style="padding-top: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
+<div fxLayout="row" *ngIf="!sentMessage" style="padding-top: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
   <div fxFlex.gt-xs="50" fxLayoutAlign="center">
     <h1 i18n>We would love to hear your feedback.</h1>
   </div>
 </div>
-<div fxLayout="row" style="padding-bottom: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
+<div fxLayout="row" *ngIf="!sentMessage" style="padding-bottom: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
   <form [formGroup]="contactForm" *ngIf="contactForm" (ngSubmit)="onSubmit()">
     <div fxLayout="column" fxFlex="100" fxLayoutAlign="center" ngStyle.lt-lg="width: 50vw;" ngStyle.lg="width: 45vw;"
       ngStyle.gt-lg="width: 30vw;">
@@ -57,4 +57,15 @@
       </div>
     </div>
   </form>
+</div>
+<div fxLayout="column" *ngIf="sentMessage" style="height: 80vh;" fxLayoutAlign="center center"
+  ngClass.xs="container-xs">
+  <h1 i18n>Thank you for your message!</h1>
+
+  <span i18n>Your message has been successfully sent to our team and we will get in touch with you
+    shortly.</span>
+
+  <span i18n>We have sent you a confirmatiion email. Please check your spam mail folder, if you have not received it
+    within
+    the next few minutes.</span>
 </div>

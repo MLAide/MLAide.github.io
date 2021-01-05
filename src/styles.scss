@@ -93,6 +93,9 @@ $mlaide-theme: mat-light-theme($mlaide-primary, $mlaide-accent, $mlaide-warn);
 @include angular-material-theme($mlaide-theme);
 
 /* You can add global styles to this file, and also import other style files */
+$primary: mat-color($mlaide-primary);
+$accent: mat-color($mlaide-accent);
+$warn: mat-color($mlaide-warn);
 
 /**
 *
@@ -206,6 +209,14 @@ width:96px;
     height:36px;
     width:36px;
 }
+
+/* 
+* Snackbar
+*/
+.snackbar-failure {
+    background-color: lightgray;
+    color: $warn;
+  }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
