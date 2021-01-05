@@ -1,7 +1,5 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import * as FontAwesomeBrands from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +8,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'webpage';
+  faGithub = FontAwesomeBrands.faGithub;
+  faSlack = FontAwesomeBrands.faSlack;
+  faTwitter = FontAwesomeBrands.faTwitter;
 }

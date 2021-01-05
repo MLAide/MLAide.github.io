@@ -6,10 +6,15 @@
     </div>
 
     <div fxFlex="50" fxLayoutAlign="end center">
-      <button mat-button aria-label="Link to Pricing" i18n>Pricing</button>
-      <button mat-button aria-label="Link to Docs" i18n>Docs</button>
-      <button mat-button aria-label="Link to Contact" i18n>Contact</button>
-      <button mat-flat-button color="accent" aria-label="Link to Login" i18n>Login</button>
+      <div>
+        <button mat-button aria-label="Link to Pricing" i18n>Pricing</button>
+        <button mat-button aria-label="Link to Docs" i18n>Docs</button>
+        <button mat-button aria-label="Link to Contact" i18n>Contact</button>
+        <button mat-icon-button aria-label="Link to Github" i18n>
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </button>
+        <button mat-flat-button color="accent" aria-label="Link to Login" i18n>Login</button>
+      </div>
     </div>
 
   </mat-toolbar>
@@ -32,9 +37,17 @@
       4.0.</span>
   </div>
   <div fxLayout="column">
-    <button mat-button aria-label="Link to Github" i18n>Github</button>
-    <button mat-button aria-label="Link to Slack" i18n>Slack</button>
-    <button mat-button aria-label="Link to Twitter" i18n>Twitter</button>
+    <button mat-button aria-label="Link to Github" i18n>
+      <fa-icon [icon]="faGithub" style="padding-right: 8px"></fa-icon> Github
+    </button>
+    <button mat-button aria-label="Link to Slack" i18n>
+      <fa-icon [icon]="faSlack" style="padding-right: 8px"></fa-icon>Slack
+    </button>
+    <button mat-button aria-label="Link to Twitter" i18n>
+      <div fxLayout="row" fxLayoutAlign="space-around center">
+        <fa-icon [icon]="faTwitter" style="padding-right: 8px"></fa-icon>Twitter
+      </div>
+    </button>
   </div>
 </div>
 <!-- Footer End -->

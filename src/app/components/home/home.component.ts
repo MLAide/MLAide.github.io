@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   ];
 
   public roadmap = [
+    { content: "SaaS solution with a free trial period", },
     { content: "Visualization of Metrics for an easier model evaluation", },
     { content: "Integration of further ML libraries (Tensorflow, PyTorch, Keras, …) toincrease adoption", },
     { content: "Extended Data Tracking (Environment, Code, …) to improve reproducibility" },
