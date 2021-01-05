@@ -6,7 +6,7 @@
             <button mat-flat-button color="accent">Get Started</button>
         </div>
     </div>
-    <div fxFlex.gt-xs="30">
+    <div fxFlex.gt-xs="30" fxHide.xs>
         <img class="img-logo" src="../../../assets/Home/ai-2.png">
     </div>
 </div>
@@ -101,7 +101,12 @@
 <!-- Key Features Start -->
 <div fxLayout="row" style="padding-top: 10vh; background-color: whitesmoke;" fxLayoutAlign="center"
     ngClass.xs="container-xs">
-    <h1 i18n>Have a look at our key features:</h1>
+    <div fxFlex.gt-xs="50">
+        <h1 i18n>Track all the relevant information of
+            your machine
+            learning models with ML Aide to ensure reproducibility and
+            reusability making your machine learning development lifecycle reliable and operable.</h1>
+    </div>
 </div>
 <div *ngFor="let keyFeature of keyFeatures; let last=last; let odd=odd; let even=even;">
     <div *ngIf="odd" fxLayout="row" style="padding-top: 5vh; padding-bottom: 5vh; background-color: whitesmoke;"
