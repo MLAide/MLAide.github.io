@@ -2,19 +2,19 @@
 <div fxLayout="row">
   <mat-toolbar color="primary">
     <div fxFlex="50" fxLayoutAlign="start center">
-      <button mat-button [routerLink]="['/']" aria-label="Link to Home page" i18n>ML Aide</button>
+      <a mat-button [routerLink]="['/']" aria-label="Link to Home page" i18n>ML Aide</a>
     </div>
 
     <div fxFlex="50" fxLayoutAlign="end center">
       <div>
-        <button mat-button aria-label="Link to About us" i18n>About us</button>
-        <button mat-button aria-label="Link to Pricing" i18n>Pricing</button>
-        <button mat-button aria-label="Link to Docs" i18n>Docs</button>
-        <button mat-button [routerLink]="['/contact']" aria-label="Link to Contact" i18n>Contact</button>
-        <button mat-icon-button aria-label="Link to Github" i18n>
+        <a mat-button aria-label="Link to About us" i18n>About us</a>
+        <a mat-button aria-label="Link to Pricing" i18n>Pricing</a>
+        <a mat-button aria-label="Link to Docs" i18n>Docs</a>
+        <a mat-button [routerLink]="['/contact']" aria-label="Link to Contact" i18n>Contact</a>
+        <a mat-icon-button aria-label="Link to Github" i18n>
           <fa-icon [icon]="faGithub"></fa-icon>
-        </button>
-        <button mat-flat-button color="accent" aria-label="Link to Login" i18n>Login</button>
+        </a>
+        <a mat-flat-button color="accent" aria-label="Link to Login" i18n>Login</a>
       </div>
     </div>
 
@@ -29,26 +29,24 @@
 <!-- Footer Start -->
 <div fxLayout="row" fxLayoutAlign="space-around center" style="padding-top: 5vh; background-color: lightgray;">
   <div fxLayout="column">
-    <button mat-button aria-label="Link to Imprint" i18n>Imprint</button>
-    <button mat-button aria-label="Link to Privacy" i18n>Privacy</button>
-    <button mat-button aria-label="Link to AGB" i18n>Terms of service</button>
+    <a mat-button aria-label="Link to Imprint" i18n>Imprint</a>
+    <a mat-button aria-label="Link to Privacy" i18n>Privacy</a>
+    <a mat-button aria-label="Link to AGB" i18n>Terms of service</a>
   </div>
   <div fxLayout="column">
     <span class="mat-small">Copyright © 2021. Code licensed under Apache 2.0 License. Documentation licensed under CC BY
       4.0.</span>
   </div>
   <div fxLayout="column">
-    <button mat-button aria-label="Link to Github" i18n>
+    <a mat-button aria-label="Link to Github" i18n>
       <fa-icon [icon]="faGithub" style="padding-right: 8px"></fa-icon> Github
-    </button>
-    <button mat-button aria-label="Link to Slack" i18n>
+    </a>
+    <a mat-button aria-label="Link to Slack" i18n>
       <fa-icon [icon]="faSlack" style="padding-right: 8px"></fa-icon>Slack
-    </button>
-    <button mat-button aria-label="Link to Twitter" i18n>
-      <div fxLayout="row" fxLayoutAlign="space-around center">
-        <fa-icon [icon]="faTwitter" style="padding-right: 8px"></fa-icon>Twitter
-      </div>
-    </button>
+    </a>
+    <a mat-button aria-label="Link to Twitter" i18n>
+      <fa-icon [icon]="faTwitter" style="padding-right: 8px"></fa-icon>Twitter
+    </a>
   </div>
 </div>
 <!-- Footer End -->
