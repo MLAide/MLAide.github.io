@@ -7,7 +7,7 @@
 
     <div fxFlex="50" fxLayoutAlign="end center">
       <div>
-        <a mat-button aria-label="Link to About us" i18n>About us</a>
+        <a mat-button [routerLink]="['/about-us']" aria-label="Link to About us" i18n>About us</a>
         <a mat-button aria-label="Link to Pricing" i18n>Pricing</a>
         <a mat-button aria-label="Link to Docs" i18n>Docs</a>
         <a mat-button [routerLink]="['/contact']" aria-label="Link to Contact" i18n>Contact</a>

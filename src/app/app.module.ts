@@ -23,6 +23,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -71,6 +72,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     AppComponent,
     HomeComponent,
     ContactComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
