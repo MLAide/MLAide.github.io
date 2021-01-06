@@ -37,7 +37,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     }
   },
   theme: 'edgeless',
-  type: 'opt-out',
+  type: 'opt-in',
   layout: 'my-custom-layout',
   layouts: {
     "my-custom-layout": '{{messagelink}}{{compliance}}'
@@ -52,7 +52,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     `,
   },
   content: {
-    message: 'By using our site, you acknowledge that you have read and understand our ',
+    message: 'We use cookies to ensure you get the very best experience on our website. For further information please check our ',
 
     cookiePolicyLink: 'Cookie Policy',
     cookiePolicyHref: 'https://cookie.com',
