@@ -33,7 +33,7 @@ const cookieConfig: NgcCookieConsentConfig = {
       background: '#000'
     },
     button: {
-      background: '#f1d600'
+      background: '#195cc1'
     }
   },
   theme: 'edgeless',
