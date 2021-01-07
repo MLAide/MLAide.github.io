@@ -218,5 +218,9 @@ width:96px;
     color: $warn;
   }
 
+h1, h2, h3, h4 {
+    margin-top: 16px !important;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
