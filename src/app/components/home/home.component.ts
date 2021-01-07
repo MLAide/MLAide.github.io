@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     { title: "Experiment Lineage", content: "Inspect your experiment with a visualized lineage representing the relationship between all runs and artifacts.", imgUrl: "../../../assets/Home/lineage.png" },
     { title: "Model Management", content: "Put your models under version control and stage them to obtain transparency and reproducibility in your operations.", imgUrl: "../../../assets/Home/model-management.png" },
     { title: "Runs Evaluation", content: "Evaluate your runs by viewing or comparing parameters and metrics to identify the best model for your machine learning product.", imgUrl: "../../../assets/Home/run-comparison.png" },
-    { title: "ML Library Integration", content: "Raising amount of integrated machine learning libraries for convenient tracking of parameters, metrics and models.", imgUrl: "../../../assets/Home/ai-2.png" },
+    { title: "ML Library Integration", content: "Raising amount of integrated machine learning libraries for convenient tracking of parameters, metrics and models.", imgUrl: "../../../assets/Home/library-integration.png" },
     { title: "Access Management", content: "Manage access to your machine learning projects and collaborate with other members of your team.", imgUrl: "../../../assets/Home/project-members.png" },
   ];
 
