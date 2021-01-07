@@ -1,7 +1,7 @@
 <!-- Contact form start -->
 <div fxLayout="row" *ngIf="!sentMessage" style="padding-top: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
   <div fxFlex.gt-xs="50" fxLayoutAlign="center">
-    <h1 i18n>We would love to hear your feedback.</h1>
+    <h1 class="mat-display-2" i18n>We would love to hear your feedback.</h1>
   </div>
 </div>
 <div fxLayout="row" *ngIf="!sentMessage" style="padding-bottom: 10vh;" fxLayoutAlign="center" ngClass.xs="container-xs">
@@ -63,7 +63,7 @@
 <!-- Confirmation message start -->
 <div fxLayout="column" *ngIf="sentMessage" style="height: 80vh;" fxLayoutAlign="center center"
   ngClass.xs="container-xs">
-  <h1 i18n>Thank you for your message!</h1>
+  <h1 class="mat-display-2" i18n>Thank you for your message!</h1>
 
   <span i18n>Your message has been successfully sent to our team and we will get in touch with you
     shortly.</span>
