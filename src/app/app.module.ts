@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { LicenseComponent } from './components/license/license.component';
+import { ImprintComponent } from './components/imprint/imprint.component';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -75,6 +76,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     ContactComponent,
     AboutUsComponent,
     LicenseComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
