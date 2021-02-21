@@ -2,22 +2,41 @@
 <div fxLayout="row">
   <mat-toolbar color="primary">
     <div fxFlex="50" fxLayoutAlign="start center">
-      <a mat-button [routerLink]="['/']" aria-label="Link to Home page" i18n>ML Aide</a>
+      <a mat-button [routerLink]="['/']" aria-label="Link to Home page" i18n
+        >ML Aide</a
+      >
     </div>
 
     <div fxFlex="50" fxLayoutAlign="end center">
       <div>
-        <a mat-button [routerLink]="['/about-us']" aria-label="Link to About us" i18n>About us</a>
-        <a mat-button aria-label="Link to Pricing" i18n>Pricing</a>
+        <a
+          mat-button
+          [routerLink]="['/about-us']"
+          aria-label="Link to About us"
+          i18n
+          >About us</a
+        >
         <a mat-button aria-label="Link to Docs" i18n>Docs</a>
-        <a mat-button [routerLink]="['/contact']" aria-label="Link to Contact" i18n>Contact</a>
-        <a mat-icon-button aria-label="Link to Github" i18n>
+        <a
+          mat-button
+          [routerLink]="['/contact']"
+          aria-label="Link to Contact"
+          i18n
+          >Contact</a
+        >
+        <a
+          mat-icon-button
+          aria-label="Link to Github"
+          href="https://github.com/MLAide/"
+          i18n
+        >
           <fa-icon [icon]="faGithub"></fa-icon>
         </a>
-        <a mat-flat-button color="accent" aria-label="Link to Login" i18n>Login</a>
+        <a mat-flat-button color="accent" aria-label="Link to Login" i18n
+          >Login</a
+        >
       </div>
     </div>
-
   </mat-toolbar>
 </div>
 <!-- NavBar End -->
@@ -27,20 +46,44 @@
 </div>
 <!-- RouterOutlet End -->
 <!-- Footer Start -->
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center"
-  style="padding: 32px 0; background-color: lightgray;">
+<div
+  fxLayout="row"
+  fxLayout.xs="column"
+  fxLayoutAlign="space-around center"
+  style="padding: 16px 0; background-color: lightgray"
+>
   <div fxLayoutAlign="space-between center" ngClass.xs="container-xs">
-    <a aria-label="Link to Imprint" class="mat-small" style="padding: 0 16px;" i18n>Imprint</a>
-    <a aria-label="Link to Privacy" class="mat-small" style="padding: 0 16px;" i18n>Privacy</a>
+    <a
+      aria-label="Link to Imprint"
+      class="mat-small"
+      style="padding: 0 16px"
+      i18n
+      >Imprint</a
+    >
+    <a
+      aria-label="Link to Privacy"
+      class="mat-small"
+      style="padding: 0 16px"
+      i18n
+      >Privacy</a
+    >
   </div>
   <div ngClass.xs="container-xs">
-    <span class="mat-small">Copyright © 2020 Kouliev & Singh IT Solutions GbR, Licensed under the <a
-        [routerLink]="['/about-us']">Apache
-        License, Version 2.0.</a> Documentation licensed under CC BY
-      4.0.</span>
+    <span class="mat-small"
+      >Copyright © 2022 Farruch Kouliev & Ramandeep Singh, Licensed under the
+      <a href="https://github.com/MLAide/MLAide/blob/master/LICENSE"
+        >Apache License, Version 2.0.</a
+      >
+      Documentation licensed under CC BY 4.0.</span
+    >
   </div>
   <div fxLayout="row" ngClass.xs="container-xs">
-    <a mat-icon-button aria-label="Link to Github" i18n>
+    <a
+      mat-icon-button
+      aria-label="Link to Github"
+      href="https://github.com/MLAide/"
+      i18n
+    >
       <fa-icon [icon]="faGithub"></fa-icon>
     </a>
     <a mat-icon-button aria-label="Link to Slack" i18n>
@@ -50,6 +93,5 @@
       <fa-icon [icon]="faTwitter"></fa-icon>
     </a>
   </div>
-
 </div>
 <!-- Footer End -->
