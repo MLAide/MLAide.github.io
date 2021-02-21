@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public keyFeatures = [
-    { title: "Experiment Tracking", content: "Track parameters, metrics and artifacts in your machine learning experiments that are organized through single runs.", imgUrl: "../../../assets/Home/tracking.png" },
+    { title: "Experiment Tracking", content: "Track parameters, metrics and artifacts in your machine learning experiments that are organized by single runs.", imgUrl: "../../../assets/Home/tracking.png" },
     { title: "Artifact Management", content: "Attach artifacts like code, configs or models to your experiment runs and reuse them in your next run.", imgUrl: "../../../assets/Home/artifact-management.png" },
     { title: "Experiment Lineage", content: "Inspect your experiment with a visualized lineage representing the relationship between all runs and artifacts.", imgUrl: "../../../assets/Home/lineage.png" },
     { title: "Model Staging", content: "Put your models under version control and stage them to obtain transparency and reproducibility in your operations.", imgUrl: "../../../assets/Home/model-management.png" },
