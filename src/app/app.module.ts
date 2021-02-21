@@ -26,6 +26,7 @@ import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsen
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { LicenseComponent } from './components/license/license.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -77,6 +78,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     AboutUsComponent,
     LicenseComponent,
     ImprintComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,

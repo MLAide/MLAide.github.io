@@ -5,6 +5,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
 import { ImprintComponent } from "./components/imprint/imprint.component";
 import { LicenseComponent } from "./components/license/license.component";
+import { PrivacyComponent } from "./components/privacy/privacy.component";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "license", component: LicenseComponent },
   { path: "imprint", component: ImprintComponent },
+  { path: "privacy", component: PrivacyComponent },
   { path: "**", redirectTo: "home" },
 ];
 
