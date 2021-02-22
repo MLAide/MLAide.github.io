@@ -84,7 +84,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     PrivacyComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
