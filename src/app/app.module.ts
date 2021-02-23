@@ -10,6 +10,7 @@ import { LayoutModule } from "@angular/cdk/layout";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { HomeComponent } from "./components/home/home.component";
@@ -84,7 +85,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     PrivacyComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: "serverApp" }),
     AppRoutingModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
@@ -93,6 +94,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
+    MatCheckboxModule,
     MatIconModule,
     MatListModule,
     FontAwesomeModule,
