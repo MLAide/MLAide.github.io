@@ -10,18 +10,11 @@ import { LayoutModule } from "@angular/cdk/layout";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { HomeComponent } from "./components/home/home.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { ContactComponent } from "./components/contact/contact.component";
-import { MatInputModule } from "@angular/material/input";
-import { MatSelectModule } from "@angular/material/select";
-import { MatRadioModule } from "@angular/material/radio";
 import { MatCardModule } from "@angular/material/card";
-import { MatSnackBarModule } from "@angular/material/snack-bar";
-import { ReactiveFormsModule } from "@angular/forms";
 
 import {
   NgcCookieConsentModule,
@@ -78,7 +71,6 @@ const cookieConfig: NgcCookieConsentConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent,
     AboutUsComponent,
     LicenseComponent,
     ImprintComponent,
@@ -94,17 +86,10 @@ const cookieConfig: NgcCookieConsentConfig = {
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
-    MatCheckboxModule,
     MatIconModule,
     MatListModule,
     FontAwesomeModule,
-    MatInputModule,
-    MatSelectModule,
-    MatRadioModule,
     MatCardModule,
-    MatSnackBarModule,
-    ReactiveFormsModule,
-
     NgcCookieConsentModule.forRoot(cookieConfig),
   ],
   providers: [],
