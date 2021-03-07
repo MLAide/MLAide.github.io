@@ -16,7 +16,7 @@
           i18n
           >About us</a
         >
-        <a mat-button aria-label="Link to Docs" i18n>Docs</a>
+        <!--<a mat-button aria-label="Link to Docs" i18n>Docs</a>-->
         <a
           mat-icon-button
           aria-label="Link to Github"
@@ -25,7 +25,12 @@
         >
           <fa-icon [icon]="faGithub"></fa-icon>
         </a>
-        <a mat-flat-button color="accent" aria-label="Link to Get started" i18n
+        <a
+          href="https://mlaide.github.io/docs/"
+          mat-flat-button
+          color="accent"
+          aria-label="Link to Get started"
+          i18n
           >Get started</a
         >
       </div>
@@ -67,7 +72,7 @@
     <span class="mat-small"
       >Copyright © 2021 Farruch Kouliev & Ramandeep Singh, Licensed under the
       <a [routerLink]="['/license']">Apache License, Version 2.0.</a>
-      Documentation licensed under CC BY 4.0.</span
+      <!--Documentation licensed under CC BY 4.0.--></span
     >
   </div>
   <div fxLayout="row" ngClass.xs="container-xs">
