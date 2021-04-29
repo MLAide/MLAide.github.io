@@ -2,9 +2,13 @@
 <div fxLayout="row">
   <mat-toolbar color="primary">
     <div fxFlex="50" fxLayoutAlign="start center">
-      <a mat-button [routerLink]="['/']" aria-label="Link to Home page" i18n
-        >ML Aide</a
-      >
+      <a mat-button [routerLink]="['/']" aria-label="Link to Home page" i18>
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <img class="img-logo" src="../../../assets/Home/Logo_red_eyes.png">
+          <span class="mat-h1" style="padding-left: 8px; padding-bottom: 0; padding-top: 0; margin-bottom: 0; margin-top: 0">ML Aide</span>
+        </div>
+
+      </a>
     </div>
 
     <div fxFlex="50" fxLayoutAlign="end center">
@@ -26,7 +30,7 @@
           <fa-icon [icon]="faGithub"></fa-icon>
         </a>
         <a
-          href="https://mlaide.github.io/docs/"
+          href="https://docs.mlaide.com"
           mat-flat-button
           color="accent"
           aria-label="Link to Get started"
@@ -77,8 +81,8 @@
   </div>
   <div fxLayout="row" ngClass.xs="container-xs">
     <span class="mat-small"
-      ><a href="mailto:contact.mlaide@gmail.com"
-        >contact.mlaide@gmail.com</a
+      ><a href="mailto:contact@mlaide.com"
+        >contact@mlaide.com</a
       ></span
     >
   </div>
