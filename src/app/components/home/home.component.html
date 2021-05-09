@@ -22,7 +22,7 @@
     </div>
   </div>
   <div fxFlex.gt-xs="30" fxHide.xs>
-    <img class="img-logo" src="../../../assets/Home/Logo_red_eyes.png" />
+    <img class="img-logo" src="../../../assets/Home/Logo_red_eyes.png" alt="ML Aide Logo" />
   </div>
 </div>
 <div fxLayout="row" class="bg-change-white-to-blue"></div>
@@ -211,7 +211,7 @@
     </div>
     <h2 ngClass.xs="mat-h2"></h2>
     <div fxFlex.gt-xs="30" ngStyle.gt-xs="margin-left:5vw;">
-      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" />
+      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" [alt]="keyFeature.altMessage" />
     </div>
   </div>
   <div
@@ -224,7 +224,7 @@
     ngClass.xs="container-xs"
   >
     <div fxFlex.gt-xs="30" ngStyle.gt-xs="margin-right:5vw;">
-      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" />
+      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" [alt]="keyFeature.altMessage"/>
     </div>
     <div fxLayout="column" fxFlex.gt-xs="20">
       <h2 class="mat-h2" class="mat-h2" i18n>{{ keyFeature.title }}</h2>
