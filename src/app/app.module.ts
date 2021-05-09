@@ -24,10 +24,11 @@ import { AboutUsComponent } from "./components/about-us/about-us.component";
 import { LicenseComponent } from "./components/license/license.component";
 import { ImprintComponent } from "./components/imprint/imprint.component";
 import { PrivacyComponent } from "./components/privacy/privacy.component";
+import {environment} from "../environments/environment";
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: "localhost", // it is recommended to set your domain, for cookies to work properly
+    domain: environment.domain, // it is recommended to set your domain, for cookies to work properly
   },
   palette: {
     popup: {
@@ -45,9 +46,9 @@ const cookieConfig: NgcCookieConsentConfig = {
   },
   elements: {
     messagelink: `
-    <span id="cookieconsent:desc" class="cc-message">{{message}} 
-      <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}">{{cookiePolicyLink}}</a>, 
-      <a aria-label="learn more about our privacy policy" tabindex="1" class="cc-link" href="{{privacyPolicyHref}}">{{privacyPolicyLink}}</a> and our 
+    <span id="cookieconsent:desc" class="cc-message">{{message}}
+      <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{cookiePolicyHref}}">{{cookiePolicyLink}}</a>,
+      <a aria-label="learn more about our privacy policy" tabindex="1" class="cc-link" href="{{privacyPolicyHref}}">{{privacyPolicyLink}}</a> and our
       <a aria-label="learn more about our terms of service" tabindex="2" class="cc-link" href="{{tosHref}}">{{tosLink}}</a>
     </span>
     `,
