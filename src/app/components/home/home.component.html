@@ -11,8 +11,8 @@
     ngStyle.gt-xs="padding-right: 5vw;"
     ngClass.xs="container-xs"
   >
-    <h1 class="mat-display-2" class="mat-display-2" i18n>
-      Hi, we are ML Aide, and our purpose is making model management a joy for
+    <h1 class="mat-display-2" i18n>
+      Hi, we are ML Aide, and our purpose is to make model management a joy for
       you!
     </h1>
     <div>
@@ -35,7 +35,7 @@
   style="padding-top: 5vh"
   ngClass.xs="container-xs"
 >
-  <h1 class="mat-display-2" i18n>ML Aide is designed and developed to be</h1>
+  <h2 class="mat-display-2" i18n>ML Aide is designed and developed to be</h2>
 </div>
 <div
   fxLayout="row"
@@ -179,10 +179,10 @@
   ngClass.xs="container-xs"
 >
   <div fxFlex.gt-xs="50">
-    <h1 class="mat-display-2" i18n>
+    <h2 class="mat-display-2" i18n>
       Track all relevant information of your machine learning models with ML
       Aide to manage your model lifecycle from training to retirement.
-    </h1>
+    </h2>
   </div>
 </div>
 <div
@@ -227,7 +227,7 @@
       <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" [alt]="keyFeature.altMessage"/>
     </div>
     <div fxLayout="column" fxFlex.gt-xs="20">
-      <h2 class="mat-h2" class="mat-h2" i18n>{{ keyFeature.title }}</h2>
+      <h2 class="mat-h2" i18n>{{ keyFeature.title }}</h2>
 
       <span class="mat-body" i18n>
         {{ keyFeature.content }}
@@ -251,7 +251,7 @@
     </div>
     <h2 class="mat-h2"></h2>
     <div fxFlex.gt-xs="30" ngStyle.gt-xs="margin-left:5vw;">
-      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" />
+      <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" [alt]="keyFeature.altMessage"/>
     </div>
   </div>
   <div
@@ -265,18 +265,43 @@
   </div>
 </div>
 <!-- Key Features End -->
-<!-- Features Roadmap Start -->
+<!-- Integration of ML Frameworks Start -->
 <div
   fxLayout="row"
   style="padding-top: 10vh"
   fxLayoutAlign="center"
   ngClass.xs="container-xs"
 >
-  <h1 class="mat-display-2" i18n>And there is much more to come:</h1>
+  <h2 class="mat-display-2" i18n>Convenient integrations with:</h2>
 </div>
 <div
   fxLayout="row"
+  fxLayout.xs="column"
   style="padding-bottom: 10vh"
+  fxLayoutAlign="space-around center"
+  ngClass.xs="container-xs"
+>
+  <div *ngFor="let mlFramework of mlFrameworks; let last = last;" fxLayoutAlign.xs="center center">
+    <img
+      class="img-ml-framework"
+      [ngClass.xs]="last? 'img-ml-framework-xs-last' : 'img-ml-framework-xs'"
+      [src]="mlFramework.imgUrl"
+      [alt]="mlFramework.altMessage"/>
+  </div>
+</div>
+<!-- Integration of ML Frameworks End -->
+<!-- Features Roadmap Start -->
+<div
+  fxLayout="row"
+  style="padding-top: 10vh; background-color: whitesmoke"
+  fxLayoutAlign="center"
+  ngClass.xs="container-xs"
+>
+  <h2 class="mat-display-2" i18n>And there is much more to come:</h2>
+</div>
+<div
+  fxLayout="row"
+  style="padding-bottom: 10vh; background-color: whitesmoke"
   fxLayoutAlign="center"
   ngClass.xs="container-xs"
 >
