@@ -203,7 +203,7 @@
     ngClass.xs="container-xs"
   >
     <div fxLayout="column" fxFlex.gt-xs="20">
-      <h2 class="mat-h2" i18n>{{ keyFeature.title }}</h2>
+      <h2 class="mat-h2 font-triadic-2" i18n>{{ keyFeature.title }}</h2>
 
       <span class="mat-body" i18n>
         {{ keyFeature.content }}
@@ -227,7 +227,7 @@
       <img class="img-feature mat-elevation-z2" [src]="keyFeature.imgUrl" [alt]="keyFeature.altMessage"/>
     </div>
     <div fxLayout="column" fxFlex.gt-xs="20">
-      <h2 class="mat-h2" i18n>{{ keyFeature.title }}</h2>
+      <h2 class="mat-h2 font-triadic-2" i18n>{{ keyFeature.title }}</h2>
 
       <span class="mat-body" i18n>
         {{ keyFeature.content }}
@@ -243,7 +243,7 @@
     ngClass.xs="container-xs"
   >
     <div fxLayout="column" fxFlex.gt-xs="20">
-      <h2 class="mat-h2" i18n>{{ keyFeature.title }}</h2>
+      <h2 class="mat-h2 font-triadic-2" i18n>{{ keyFeature.title }}</h2>
 
       <span class="mat-body" i18n>
         {{ keyFeature.content }}
@@ -265,10 +265,34 @@
   </div>
 </div>
 <!-- Key Features End -->
+<!-- Data & Information Security Start -->
+<div
+  class="bg-primary-800"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  style="padding-top: 5vh; padding-bottom: 5vh"
+  ngClass.xs="container-xs"
+>
+  <div
+    fxLayout="column"
+    fxFlex.gt-xs="30"
+    ngStyle.gt-xs="padding-right: 5vw;"
+    ngClass.xs="container-xs"
+  >
+    <h2 class="mat-display-2" i18n>
+      We care about data and information security and let you decide where you want to store it and who should access it!
+    </h2>
+  </div>
+  <div fxFlex.gt-xs="30">
+    <img class="img-logo" src="../../../assets/Home/data-information-security.png" alt="ML Aide High Level System Architecture" />
+  </div>
+
+</div>
+<!-- Data & Information Security End -->
 <!-- Integration of ML Frameworks Start -->
 <div
   fxLayout="row"
-  style="padding-top: 10vh"
+  style="padding-top: 10vh;"
   fxLayoutAlign="center"
   ngClass.xs="container-xs"
 >
@@ -278,6 +302,7 @@
   fxLayout="row"
   fxLayout.xs="column"
   style="padding-bottom: 10vh"
+  ngStyle.gt-xs="padding-left:25vw; padding-right: 25vw"
   fxLayoutAlign="space-around center"
   ngClass.xs="container-xs"
 >

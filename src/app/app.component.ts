@@ -25,6 +25,7 @@ type NewType = Injector;
 })
 export class AppComponent implements OnInit, OnDestroy {
   faGithub = FontAwesomeBrands.faGithub;
+  faLinkedin = FontAwesomeBrands.faLinkedin;
 
   //keep refs to subscriptions to be able to unsubscribe later
   private popupOpenSubscription: Subscription;

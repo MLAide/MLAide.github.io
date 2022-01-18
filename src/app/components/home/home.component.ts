@@ -54,10 +54,12 @@ export class HomeComponent implements OnInit {
       altText: "Tensorflow",
       imgUrl: "../../../assets/Home/tensorflow.png",
     },
+    /*
     {
       altText: "PyTorch",
       imgUrl: "../../../assets/Home/pytorch.png",
     },
+    */
     {
       altText: "Scikit learn",
       imgUrl: "../../../assets/Home/scikit-learn.png",
@@ -67,9 +69,8 @@ export class HomeComponent implements OnInit {
   public roadmap = [
     { content: "Visualization of metrics for an easier model evaluation", },
     { content: "Provide kubernetes based installation for a quick setup and start", },
-    { content: 'Integrate "Dex" for an seamless integration of enterprise identity providers', },
     { content: "Assistant system for automatic model selection", },
-    { content: "Integration of further ML libraries (Tensorflow, PyTorch, Keras, …) toincrease adoption", },
+    { content: "Integration of further ML libraries (PyTorch, Keras, …) to increase adoption", },
     { content: "Auto recording of parameters and metrics to enhance the convenience", },
     { content: "Auto recognition of artifact types", },
     { content: "Visualization of artifact lineage to inspect its creation", },

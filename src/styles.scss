@@ -21,7 +21,7 @@ $mat-mlaide-blue: (
   600: #060707,
   700: #1a6dd3,
   800: #195cc1,
-  900: #003490,
+  900: #163ea2,
   A100: #badbfc,
   A200: #8dc5fb,
   A400: #6088f4,
@@ -100,7 +100,7 @@ $warn: mat-color($mlaide-warn);
 /**
 *
 * Colors
-* 
+*
 */
 
 // Background
@@ -114,6 +114,18 @@ $warn: mat-color($mlaide-warn);
 }
 .bg-primary-50 {
     background-color: mat-color($mlaide-primary, 50);
+}
+
+.bg-complementary {
+  background-color: #c17e19;
+}
+
+.bg-triadic-1 {
+  background-color: #7e19c1;
+}
+
+.bg-triadic-2 {
+  background-color: #c1195c;
 }
 
 .bg-accent-800 {
@@ -131,10 +143,22 @@ $warn: mat-color($mlaide-warn);
     color: mat-color($mlaide-accent,800);
 }
 
+.font-primary-800 {
+  color: mat-color($mlaide-primary,800);
+}
+
+.font-triadic-1 {
+  color: #7e19c1;
+}
+
+.font-triadic-2 {
+  color: #c1195c;
+}
+
 /**
 *
 * Containers
-* 
+*
 */
 
 .container-xs {
@@ -145,72 +169,72 @@ $warn: mat-color($mlaide-warn);
 /**
 *
 * Icons
-* 
+*
 */
 
 // Size
-.material-icons.md-18 { 
+.material-icons.md-18 {
 font-size: 18px;
 height:18px;
 width:18px;
 }
 
-.material-icons.md-20 { 
+.material-icons.md-20 {
 font-size: 20px,
 }
 
-.material-icons.md-24 { 
+.material-icons.md-24 {
 font-size: 24px;
 height:auto;
 width:auto;
 }
-.material-icons.md-32 { 
+.material-icons.md-32 {
 font-size: 32px;
 height:32px;
 width:32px;
 }
 
-.material-icons.md-36 { 
+.material-icons.md-36 {
 font-size: 36px;
 height:36px;
 width:36px;
 }
-.material-icons.md-48 { 
-font-size: 48px; 
+.material-icons.md-48 {
+font-size: 48px;
 height:48px;
 width:48px;
 }
-.material-icons.md-96 { 
-font-size: 96px; 
+.material-icons.md-96 {
+font-size: 96px;
 height:96px;
 width:96px;
 }
 
 // Border
-.material-icons.md-bg-circle-96{ 
+.material-icons.md-bg-circle-96{
     border-radius:50%;
     height:144px;
     width:144px;
 }
-.material-icons.md-bg-circle-48{ 
+.material-icons.md-bg-circle-48{
     border-radius:50%;
     height:72px;
     width:72px;
 }
-  
-.material-icons.md-bg-circle-32{ 
+
+.material-icons.md-bg-circle-32{
     border-radius:50%;
     height:48px;
     width:48px;
 }
 
-.material-icons.md-bg-circle-24{ 
+.material-icons.md-bg-circle-24{
     border-radius:50%;
     height:36px;
     width:36px;
 }
 
-/* 
+/*
 * Snackbar
 */
 .snackbar-failure {
