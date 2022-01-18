@@ -81,12 +81,23 @@
       <!--Documentation licensed under CC BY 4.0.--></span
     >
   </div>
-  <div fxLayout="row" ngClass.xs="container-xs">
-    <span class="mat-small"
-      ><a href="mailto:contact@mlaide.com"
-        >contact@mlaide.com</a
-      ></span
-    >
+  <div fxLayout="row" ngClass.xs="container-xs" fxLayoutAlign="space-between center">
+    <span class="mat-small">
+      <a href="mailto:contact@mlaide.com">
+        contact@mlaide.com
+      </a>
+    </span>
+    <span>
+      <a
+        mat-icon-button
+        aria-label="Link to LinkedIn"
+        href="https://www.linkedin.com/company/ml-aide/"
+        target="_blank"
+        i18n
+      >
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+    </span>
   </div>
 </div>
 <!-- Footer End -->
