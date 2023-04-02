@@ -12,11 +12,15 @@ npm run build:ssr
 
 npm run dev:ssr
 
-## Firebase
+## Deployment to Github Pages
 
-### Deployment
+### Build
 
-ng deploy
+ng build --prod
+
+### Publish
+
+git push
 
 ## Non SSR
 
