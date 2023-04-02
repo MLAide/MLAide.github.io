@@ -20,6 +20,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       relativeLinkResolution: "legacy",
       initialNavigation: "enabled",
+      useHash: true
     }),
   ],
   exports: [RouterModule],
