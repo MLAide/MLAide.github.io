@@ -25,6 +25,7 @@ import { LicenseComponent } from "./components/license/license.component";
 import { ImprintComponent } from "./components/imprint/imprint.component";
 import { PrivacyComponent } from "./components/privacy/privacy.component";
 import {environment} from "../environments/environment";
+import {MatMenuModule} from "@angular/material/menu";
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -86,6 +87,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
+    MatMenuModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,

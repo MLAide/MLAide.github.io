@@ -10,8 +10,8 @@
 
       </a>
     </div>
-
-    <div fxFlex="50" fxLayoutAlign="end center">
+    <!-- Menu for bigger screens Start -->
+    <div fxFlex="50" fxLayoutAlign="end center" fxHide.xs>
       <div>
         <a
           mat-button
@@ -42,6 +42,42 @@
         >
       </div>
     </div>
+    <!-- Menu for bigger screens End -->
+    <!-- Menu for smaller screens Start -->
+    <div fxFlex="50" fxLayoutAlign="end center" fxHide.gt-xs>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a
+          mat-menu-item
+          [routerLink]="['/about-us']"
+          aria-label="Link to About us"
+          i18n
+        >About us</a
+        >
+        <a mat-menu-item aria-label="Link to ML Aide Blog" href="https://medium.com/ml-aide" target="_blank" i18n>Blog</a>
+        <a
+          mat-menu-item
+          aria-label="Link to Github"
+          href="https://github.com/MLAide/"
+          target="_blank"
+          i18n
+        >
+          GitHub
+        </a>
+        <a mat-menu-item aria-label="Link to book a demo appointment" href="https://calendly.com/mlaide/demo" target="_blank" i18n>Book a demo</a>
+        <a
+          href="https://docs.mlaide.com"
+          mat-menu-item
+          aria-label="Link to Get started"
+          target="_blank"
+          i18n
+        >Get started</a
+        >
+      </mat-menu>
+    </div>
+    <!-- Menu for smaller screens End -->
   </mat-toolbar>
 </div>
 <!-- NavBar End -->
