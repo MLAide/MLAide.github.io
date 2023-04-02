@@ -2,22 +2,28 @@
 <div
   fxLayout="row"
   fxLayout.xs="column"
-  style="padding-top: 10vh; padding-bottom: 10vh"
+  style="padding-top: 10vh; padding-bottom: 10vh;"
   fxLayoutAlign="center center"
 >
   <div
     fxLayout="column"
-    fxFlex.gt-xs="30"
+    fxFlex.gt-xs="40"
     ngStyle.gt-xs="padding-right: 5vw;"
     ngClass.xs="container-xs"
   >
     <h1 class="mat-display-2" i18n>
-      Hi, we are ML Aide, and our purpose is to make model management a joy for
-      you!
+      ML Aide is <span class="font-primary-800"> the only ML-Management tool that takes Data Ownership seriously </span> and lets you in control of your data!
     </h1>
-    <div>
+    <div fxLayout="row" fxLayoutAlign="space-around">
+      <a href="https://docs.mlaide.com" mat-stroked-button color="accent"
+      >Why Model Management?</a
+      >
       <a href="https://docs.mlaide.com" mat-flat-button color="accent"
         >Get Started</a
+      >
+      <a href="https://calendly.com/mlaide/demo" mat-flat-button color="primary"
+         target="_blank"
+      >Book a demo</a
       >
     </div>
   </div>
@@ -269,6 +275,7 @@
 <div
   class="bg-primary-800"
   fxLayout="row"
+  fxLayout.xs="column"
   fxLayoutAlign="center center"
   style="padding-top: 5vh; padding-bottom: 5vh"
   ngClass.xs="container-xs"
@@ -280,7 +287,7 @@
     ngClass.xs="container-xs"
   >
     <h2 class="mat-display-2" i18n>
-      We care about data and information security and let you decide where you want to store it and who should access it!
+      We care about data and information security and let you in full control of data storage and access!
     </h2>
   </div>
   <div fxFlex.gt-xs="30">
