@@ -137,6 +137,10 @@ $warn: mat-color($mlaide-warn);
     background-color: mat-color($mlaide-accent, 50);
 }
 
+.bg-dark {
+  background-color: #40404e;
+}
+
 // Font
 
 .font-accent-800 {
@@ -155,6 +159,10 @@ $warn: mat-color($mlaide-warn);
   color: #c1195c;
 }
 
+.font-white {
+  color: white!important;
+}
+
 /**
 *
 * Containers
@@ -164,6 +172,16 @@ $warn: mat-color($mlaide-warn);
 .container-xs {
     padding-left: 10vw;
     padding-right: 10vw;
+}
+
+/**
+*
+* Margins
+*
+*/
+
+.margin-r-reg {
+  margin-right: 24px!important;
 }
 
 /**
