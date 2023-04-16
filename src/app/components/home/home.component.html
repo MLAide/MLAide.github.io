@@ -182,7 +182,6 @@
 <!-- Why Model Management Start -->
 <div  fxLayout="row"
       fxLayout.xs="column"
-      ngClass.xs="container-xs"
       class="bg-dark font-white"
       style="padding-top: 10vh; padding-bottom: 10vh;"
       fxLayoutAlign="center center"
@@ -190,8 +189,8 @@
   <div
     fxLayout="column"
     fxFlex.gt-xs="60"
-    ngStyle.gt-xs="padding-right: 5vw;"
     ngClass.xs="container-xs"
+    ngStyle.gt-xs="padding-right: 5vw;"
   >
     <h2 class="mat-display-3" i18n>
       Why ML Model Management?
@@ -222,10 +221,10 @@
         <div matListItemTitle class="font-white">Reduced costs by automated processes and optimized resource allocation.</div>
       </mat-list-item>
     </mat-list>
-    <div fxLayout="row" fxLayoutAlign="end">
-      <a href="https://medium.com/ml-aide/manage-machine-learning-lifecycle-with-ml-aide-dfe7710cbe53" mat-button color="accent"
-              target="_blank"
-      > <h4 class="mat-headline" i18n>Learn more about how to manage your ML lifecycle with ML Aide</h4></a>
+    <div fxLayout="row" class="margin-t-reg" fxLayoutAlign="end">
+      <a href="https://medium.com/ml-aide/manage-machine-learning-lifecycle-with-ml-aide-dfe7710cbe53" mat-stroked-button color="accent"
+         target="_blank"
+      > <h4 ngClass.gt-xs="mat-headline" i18n>Learn how to manage your ML lifecycle with ML Aide</h4></a>
     </div>
   </div>
 </div>
@@ -284,10 +283,10 @@
   </div>
   <div fxFlex.gt-xs="35">
     <img class="img-logo" src="../../../assets/Home/why-ml-model-management.png" alt="ML Model Management Picture" />
-    <div fxLayout="row" fxLayoutAlign="end">
-    <button [routerLink]="['/']" fragment="ml-aide-key-features" mat-button color="primary"
+    <div fxLayout="row" class="margin-t-reg" fxLayoutAlign="end">
+    <button   [routerLink]="['/']" fragment="ml-aide-key-features" mat-stroked-button color="primary"
        target="_blank"
-    > <h4 class="mat-headline" i18n>Learn more about our features</h4></button>
+    > <h4 ngClass.gt-xs="mat-headline" i18n>Learn more about our features</h4></button>
       </div>
   </div>
 </div>
