@@ -182,6 +182,7 @@
 <!-- Why Model Management Start -->
 <div  fxLayout="row"
       fxLayout.xs="column"
+      ngClass.xs="container-xs"
       class="bg-dark font-white"
       style="padding-top: 10vh; padding-bottom: 10vh;"
       fxLayoutAlign="center center"
@@ -189,7 +190,6 @@
   <div
     fxLayout="column"
     fxFlex.gt-xs="60"
-    ngClass.xs="container-xs"
     ngStyle.gt-xs="padding-right: 5vw;"
   >
     <h2 class="mat-display-3" i18n>
@@ -224,7 +224,10 @@
     <div fxLayout="row" class="margin-t-reg" fxLayoutAlign="end">
       <a href="https://medium.com/ml-aide/manage-machine-learning-lifecycle-with-ml-aide-dfe7710cbe53" mat-stroked-button color="accent"
          target="_blank"
-      > <h4 ngClass.gt-xs="mat-headline" i18n>Read our blog for more info</h4></a>
+      >
+
+        <h4 ngClass.gt-xs="mat-headline" i18n>Learn how to manage your ML lifecycle with ML Aide</h4>
+      </a>
     </div>
   </div>
 </div>
