@@ -20,7 +20,10 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       relativeLinkResolution: "legacy",
       initialNavigation: "enabled",
-      useHash: true
+      useHash: true,
+      anchorScrolling: "enabled",
+      onSameUrlNavigation: "reload",
+      scrollPositionRestoration: 'enabled',
     }),
   ],
   exports: [RouterModule],

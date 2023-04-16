@@ -15,12 +15,10 @@
       ML Aide is <span class="font-primary-800"> the only ML-Management tool that takes Data Ownership seriously </span> and lets you in control of your data!
     </h1>
     <div fxLayout="row" fxLayoutAlign="end" style="margin-bottom: 24px">
-      <a href="https://docs.mlaide.com" class="margin-r-reg" mat-stroked-button color="accent"
-      >Why ML Model Management?</a
-      >
-      <a href="https://docs.mlaide.com" mat-stroked-button color="primary"
-      >Why ML Aide?</a
-      >
+      <button [routerLink]="['/']" fragment="why-ml-model-management" class="margin-r-reg" mat-stroked-button color="accent"
+      >Why ML Model Management?</button>
+      <button [routerLink]="['/']" fragment="why-ml-aide" mat-stroked-button color="primary"
+      >Why ML Aide?</button>
     </div>
     <div fxLayout="row" fxLayoutAlign="end">
       <a href="https://docs.mlaide.com" mat-flat-button color="accent"
@@ -184,11 +182,13 @@
 <!-- Why Model Management Start -->
 <div  fxLayout="row"
       fxLayout.xs="column"
+      class="bg-dark font-white"
       style="padding-top: 10vh; padding-bottom: 10vh;"
-      fxLayoutAlign="center center">
+      fxLayoutAlign="center center"
+      id="why-ml-model-management">
   <div
     fxLayout="column"
-    fxFlex.gt-xs="35"
+    fxFlex.gt-xs="60"
     ngStyle.gt-xs="padding-right: 5vw;"
     ngClass.xs="container-xs"
   >
@@ -196,50 +196,40 @@
       Why ML Model Management?
     </h2>
     <h4 class="mat-display-1" style="margin-bottom: 24px" i18n>
-      ML model management software enables your data science team <span class="font-primary-800"> to work together more efficiently and effectively</span>,
+      ML model management software enables your data science team <span class="font-accent-800"> to work together more efficiently and effectively</span>,
       track model performance, and deploy models smoothly while ensuring their security.
     </h4>
     <mat-list>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle>Collaborate effectively in a team by sharing all the models, code, and data in a centralized repository.</div>
+        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle class="font-white">Collaborate effectively in a team by sharing all the models, code, and data in a centralized repository.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle>Ensure the reproducibility of your ML models by versioning the dependencies and configurations.</div>
+        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle class="font-white">Ensure the reproducibility of your ML models by versioning the dependencies and configurations.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle>Track your ML models' performance and continuously improve your competitive advantage.</div>
+        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle class="font-white">Track your ML models' performance and continuously improve your competitive advantage.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle>Deploy models smoothly and automatically and improve the quality and reliability of your models.</div>
+        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle class="font-white">Deploy models smoothly and automatically and improve the quality and reliability of your models.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle>Reduced costs by automated processes and optimized resource allocation.</div>
+        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle class="font-white">Reduced costs by automated processes and optimized resource allocation.</div>
       </mat-list-item>
     </mat-list>
   </div>
-    <div fxFlex.gt-xs="35" ngStyle.gt-xs="padding-right: 5vw;"
-         ngClass.xs="container-xs">
-      <h4 class="mat-display-2" i18n>
-        With ML Aide you gain all these benefits for free:
-      </h4>
-      <img class="img-logo" src="../../../assets/Home/why-ml-model-management.png" alt="ML Model Management Picture" />
-    </div>
 </div>
 <!-- Why Model Management End -->
 <!-- Why ML Aide Start-->
 <div  fxLayout="row"
       fxLayout.xs="column"
-      class="bg-dark font-white"
       style="padding-top: 10vh; padding-bottom: 10vh;"
-      fxLayoutAlign="center center">
-  <div fxFlex.gt-xs="35">
-    <img class="img-logo" src="../../../assets/Home/why-ml-model-management.png" alt="ML Model Management Picture" />
-  </div>
+      fxLayoutAlign="center center"
+      id="why-ml-aide">
   <div
     fxLayout="column"
     fxFlex.gt-xs="35"
@@ -250,28 +240,28 @@
       Why ML Aide?
     </h2>
     <h4 class="mat-display-1" style="margin-bottom: 24px" i18n>
-      ML Aide is <span class="font-accent-800">the most sophisticated free and open-source ml model management tool on the market</span> that supports you in reducing overall costs by streamlining your machine-learning workflow!
+      ML Aide is <span class="font-primary-800">the most sophisticated free and open-source ml model management tool on the market</span> that supports you in reducing overall costs by streamlining your machine-learning workflow!
     </h4>
     <mat-list>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle class="font-white">Free and open-source version provides all required features to gain cost-effectivness.</div>
+        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle>Free and open-source version provides all required features to gain cost-effectivness.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle class="font-white">Data ownership for you by default - others won't give you this power for free.</div>
+        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle>Data ownership for you by default - others won't give you this power for free.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle class="font-white">Access-controll for all your artefacts to secure your competitive advantage.</div>
+        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle>Access-controll for all your artefacts to secure your competitive advantage.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle class="font-white">Centralized respository for shared projects enable collaboration in your team.</div>
+        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle>Centralized respository for shared projects enable collaboration in your team.</div>
       </mat-list-item>
       <mat-list-item ngStyle.xs="padding-bottom: 16px;">
-        <mat-icon class="font-accent-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
-        <div matListItemTitle class="font-white">Easy integration in your existing IT-infrastructure guarantees a smooth start.</div>
+        <mat-icon class="font-primary-800 margin-r-reg"  matListItemIcon>check_circle</mat-icon>
+        <div matListItemTitle>Easy integration in your existing IT-infrastructure guarantees a smooth start.</div>
       </mat-list-item>
     </mat-list>
     <h4 class="mat-display-1" style="margin-bottom: 24px" i18n>
@@ -286,16 +276,53 @@
       >Book a demo</a>
     </div>
   </div>
+  <div fxFlex.gt-xs="35">
+    <img class="img-logo" src="../../../assets/Home/why-ml-model-management.png" alt="ML Model Management Picture" />
+    <div fxLayout="row" fxLayoutAlign="end">
+    <button [routerLink]="['/']" fragment="ml-aide-key-features" mat-button color="primary"
+       target="_blank"
+    > <h4 class="mat-headline" i18n>Learn more about our features</h4></button>
+      </div>
+  </div>
 </div>
 <!-- Why ML Aide End -->
+<!-- Data & Information Security Start -->
+<div
+  class="bg-primary-800"
+  fxLayout="row"
+  fxLayout.xs="column"
+  fxLayoutAlign="center center"
+  style="padding-top: 5vh; padding-bottom: 5vh"
+  ngClass.xs="container-xs"
+>
+  <div
+    fxLayout="column"
+    fxFlex.gt-xs="30"
+    ngStyle.gt-xs="padding-right: 5vw;"
+    ngClass.xs="container-xs"
+  >
+    <h2 class="mat-display-3" i18n>
+      We care about data and information security and let you in full control of data storage and access!
+    </h2>
+  </div>
+  <div fxFlex.gt-xs="30">
+    <img class="img-logo" src="../../../assets/Home/data-information-security.png" alt="ML Aide High Level System Architecture" />
+  </div>
+
+</div>
+<!-- Data & Information Security End -->
 <!-- Key Features Start -->
 <div
   fxLayout="row"
   style="padding-top: 10vh; background-color: whitesmoke"
   fxLayoutAlign="center"
   ngClass.xs="container-xs"
+  id="ml-aide-key-features"
 >
-  <div fxFlex.gt-xs="50">
+  <div fxFlex.gt-xs="60">
+    <h2 class="mat-display-3" i18n>
+      ML Aide Features
+    </h2>
     <h2 class="mat-display-2" i18n>
       Track all relevant information of your machine learning models with ML
       Aide to manage your model lifecycle from training to retirement.
@@ -382,31 +409,7 @@
   </div>
 </div>
 <!-- Key Features End -->
-<!-- Data & Information Security Start -->
-<div
-  class="bg-primary-800"
-  fxLayout="row"
-  fxLayout.xs="column"
-  fxLayoutAlign="center center"
-  style="padding-top: 5vh; padding-bottom: 5vh"
-  ngClass.xs="container-xs"
->
-  <div
-    fxLayout="column"
-    fxFlex.gt-xs="30"
-    ngStyle.gt-xs="padding-right: 5vw;"
-    ngClass.xs="container-xs"
-  >
-    <h2 class="mat-display-2" i18n>
-      We care about data and information security and let you in full control of data storage and access!
-    </h2>
-  </div>
-  <div fxFlex.gt-xs="30">
-    <img class="img-logo" src="../../../assets/Home/data-information-security.png" alt="ML Aide High Level System Architecture" />
-  </div>
 
-</div>
-<!-- Data & Information Security End -->
 <!-- Integration of ML Frameworks Start -->
 <div
   fxLayout="row"
