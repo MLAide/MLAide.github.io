@@ -237,12 +237,12 @@
       fxLayout.xs="column"
       style="padding-top: 10vh; padding-bottom: 10vh;"
       fxLayoutAlign="center center"
+      ngClass.xs="container-xs"
       id="why-ml-aide">
   <div
     fxLayout="column"
     fxFlex.gt-xs="35"
     ngStyle.gt-xs="padding-right: 5vw;"
-    ngClass.xs="container-xs"
   >
     <h2 class="mat-display-3" i18n>
       Why ML Aide?
@@ -272,10 +272,10 @@
         <div matListItemTitle>Easy integration in your existing IT-infrastructure guarantees a smooth start.</div>
       </mat-list-item>
     </mat-list>
-    <h4 class="mat-display-1" style="margin-bottom: 24px" i18n>
+    <h4 class="mat-display-1 margin-b-reg" i18n>
     Join the ML Aide community and unlock the true power of your machine learning projects!
     </h4>
-    <div fxLayout="row" fxLayoutAlign="end">
+    <div fxLayout="row" ngClass.xs="margin-b-reg" fxLayoutAlign="end">
       <a href="https://docs.mlaide.com" mat-flat-button color="accent"
          class="margin-r-reg">Get Started</a
       >
@@ -284,7 +284,7 @@
       >Book a demo</a>
     </div>
   </div>
-  <div fxFlex.gt-xs="35">
+  <div fxFlex.gt-xs="35" ngClass.xs="margin-t-reg">
     <img class="img-logo" src="../../../assets/Home/why-ml-model-management.png" alt="ML Model Management Picture" />
     <div fxLayout="row" class="margin-t-reg" fxLayoutAlign="end">
     <button   [routerLink]="['/']" fragment="ml-aide-key-features" mat-stroked-button color="primary"
@@ -307,7 +307,6 @@
     fxLayout="column"
     fxFlex.gt-xs="30"
     ngStyle.gt-xs="padding-right: 5vw;"
-    ngClass.xs="container-xs"
   >
     <h2 class="mat-display-3" i18n>
       We care about data and information security and let you in full control of data storage and access!
