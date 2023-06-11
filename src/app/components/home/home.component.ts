@@ -37,6 +37,12 @@ export class HomeComponent implements OnInit {
       altMessage: "ML Aide web user interface - run comparison view"
     },
     {
+      title: "Source-Code Version Control",
+      content: "Track and visualize your source-code changes to analyze the effects on your experiments.",
+      imgUrl: "../../../assets/Home/version-control.png",
+      altMessage: "ML Aide web user interface - source-code version control view"
+    },
+    {
       title: "ML Library Integration",
       content: "An increasing number of integrated machine learning libraries for convenient in-code tracking of parameters, metrics, and models.",
       imgUrl: "../../../assets/Home/library-integration.png",
